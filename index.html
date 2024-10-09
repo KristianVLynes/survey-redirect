@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Survey Redirect</title>
+    <script>
+        function redirectToSurvey() {
+            // List of URLs for your 15 surveys
+            const surveys = [
+                "https://forms.gle/ekrSVZi4jWuKpTio7",
+                "https://forms.gle/pZ3dwQQ8k3BWiitZ7",
+                // Add all 15 survey links here
+            ];
+
+            // Randomly pick one of the surveys
+            const randomIndex = Math.floor(Math.random() * surveys.length);
+            const selectedSurvey = surveys[randomIndex];
+
+            // Redirect the user
+            window.location.href = selectedSurvey;
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Survey!</h1>
+    <p>Click the button below to begin the survey.</p>
+    <button onclick="redirectToSurvey()">Start Survey</button>
+</body>
+</html>
