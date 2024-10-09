@@ -6,7 +6,7 @@
     <title>Random Survey Redirect</title>
     <script>
         function redirectToSurvey() {
-            // List of URLs for your 15 surveys
+            // List of URLs for the surveys
             const surveys = [
                 "https://forms.gle/911z2TJYjRxZkNdT7",
                 "https://forms.gle/U4vrvrpa1bRvWFz5A",
@@ -19,7 +19,7 @@
             const randomIndex = Math.floor(Math.random() * surveys.length);
             const selectedSurvey = surveys[randomIndex];
 
-            // Redirect the user, ok!
+            // Redirect the user
             window.location.href = selectedSurvey;
         }
     </script>
